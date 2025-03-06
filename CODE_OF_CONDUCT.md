@@ -1,133 +1,70 @@
+import React from "react";
+import { FaCloud, FaShieldAlt, FaLaptopCode, FaPhone } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 
-# Contributor Covenant Code of Conduct
+const Home = () => {
+  return (
+    <div className="bg-gray-900 text-white min-h-screen">
+      {/* Header Section */}
+      <header className="py-6 px-8 flex justify-between items-center bg-gray-800 shadow-lg">
+        <h1 className="text-3xl font-bold">Nexora Tech</h1>
+        <nav>
+          <a href="#services" className="px-4">Services</a>
+          <a href="#about" className="px-4">About</a>
+          <a href="#contact" className="px-4">Contact</a>
+        </nav>
+      </header>
+      
+      {/* Hero Section */}
+      <section className="text-center py-20 px-10 bg-gradient-to-r from-blue-500 to-purple-600">
+        <h2 className="text-5xl font-extrabold">Empowering Businesses with Cutting-Edge IT Solutions</h2>
+        <p className="mt-4 text-lg">Innovative cybersecurity, cloud, and IT support solutions tailored to your needs.</p>
+        <Button className="mt-6 bg-white text-gray-900 px-6 py-3 font-semibold rounded-lg">Get Started</Button>
+      </section>
 
-## Our Pledge
+      {/* Services Section */}
+      <section id="services" className="py-16 px-10 text-center">
+        <h3 className="text-4xl font-bold mb-6">Our Services</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="p-6 bg-gray-800 rounded-lg">
+            <FaCloud className="text-blue-400 text-5xl mx-auto" />
+            <h4 className="text-2xl mt-4">Cloud Solutions</h4>
+            <p>Seamless and scalable cloud computing services for your business.</p>
+          </div>
+          <div className="p-6 bg-gray-800 rounded-lg">
+            <FaShieldAlt className="text-green-400 text-5xl mx-auto" />
+            <h4 className="text-2xl mt-4">Cybersecurity</h4>
+            <p>Advanced security solutions to protect your data and network.</p>
+          </div>
+          <div className="p-6 bg-gray-800 rounded-lg">
+            <FaLaptopCode className="text-purple-400 text-5xl mx-auto" />
+            <h4 className="text-2xl mt-4">IT Support</h4>
+            <p>Reliable IT support and troubleshooting for seamless operations.</p>
+          </div>
+        </div>
+      </section>
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, caste, color, religion, or sexual
-identity and orientation.
+      {/* About Section */}
+      <section id="about" className="py-16 px-10 text-center bg-gray-800">
+        <h3 className="text-4xl font-bold mb-6">About Nexora Tech</h3>
+        <p className="max-w-3xl mx-auto">Nexora Tech is dedicated to providing cutting-edge IT solutions tailored to modern business needs. Our expertise in cloud services, cybersecurity, and IT support ensures that your company stays secure and efficient.</p>
+      </section>
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+      {/* Contact Section */}
+      <section id="contact" className="py-16 px-10 text-center">
+        <h3 className="text-4xl font-bold mb-6">Get in Touch</h3>
+        <p>Have questions? We’re here to help. Reach out to us for IT solutions that fit your business.</p>
+        <Button className="mt-6 bg-blue-500 text-white px-6 py-3 font-semibold rounded-lg flex items-center mx-auto">
+          <FaPhone className="mr-2" /> Contact Us
+        </Button>
+      </section>
 
-## Our Standards
+      {/* Footer */}
+      <footer className="py-6 text-center bg-gray-800">
+        <p>&copy; 2025 Nexora Tech. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
 
-Examples of behavior that contributes to a positive environment for our
-community include:
-
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the overall
-  community
-
-Examples of unacceptable behavior include:
-
-* The use of sexualized language or imagery, and sexual attention or advances of
-  any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email address,
-  without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
-
-## Enforcement Responsibilities
-
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
-
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
-
-## Scope
-
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
-
-## Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-[INSERT CONTACT METHOD].
-All complaints will be reviewed and investigated promptly and fairly.
-
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
-
-## Enforcement Guidelines
-
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
-
-### 1. Correction
-
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
-
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
-
-### 2. Warning
-
-**Community Impact**: A violation through a single incident or series of
-actions.
-
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or permanent
-ban.
-
-### 3. Temporary Ban
-
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
-
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior, harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within the
-community.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.1, available at
-[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
-
-Community Impact Guidelines were inspired by
-[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
-
-For answers to common questions about this code of conduct, see the FAQ at
-[https://www.contributor-covenant.org/faq][FAQ]. Translations are available at
-[https://www.contributor-covenant.org/translations][translations].
-
-[homepage]: https://www.contributor-covenant.org
-[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
-[Mozilla CoC]: https://github.com/mozilla/diversity
-[FAQ]: https://www.contributor-covenant.org/faq
-[translations]: https://www.contributor-covenant.org/translations
+export default Home;
